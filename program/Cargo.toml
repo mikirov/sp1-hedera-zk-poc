@@ -1,0 +1,13 @@
+[workspace]
+[package]
+version = "0.1.0"
+name = "fibonacci-program"
+edition = "2021"
+
+[dependencies]
+sp1-zkvm = { git = "https://github.com/succinctlabs/sp1.git" }
+alloy-primitives = { version = "0.7.4", default-features = false, features = ["rlp", "serde", "std"] }
+alloy-sol-types = "0.7.4"
+bls-signatures = "0.15.0"
+sha2 = "0.10"
+serde = { version = "1.0", features = ["derive"] }
